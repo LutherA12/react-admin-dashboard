@@ -1,0 +1,41 @@
+:root {
+  --main-font: "Source Sans 3", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root,
+.app,
+.content {
+  height: 100%;
+  width: 100%;
+  font-family: var(--main-font);
+}
+
+.app {
+  display: flex;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+
+  &:hover {
+    background: #555;
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
